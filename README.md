@@ -1,10 +1,8 @@
-# Doing Web Dev Simplified's
-
-# 'Learn React With This One Project'
+# Doing Web Dev Simplified's 'Learn React With This One Project'
 
 ### Kyle says this mini React.js project will help illustrate what React is all about.
 
-### This will give an nice compact overvie of React.js and provide a nice bedrock foundation for when I start Colt Steele's React.js course.
+### This will give an nice compact overview of React.js and provide a nice bedrock foundation for when I start Colt Steele's React.js course.
 
 _We'll learn:_
 
