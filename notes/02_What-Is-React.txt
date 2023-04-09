@@ -1,0 +1,25 @@
+==============
+What is React?
+============== 
+
+React is a component based library for 
+building front-end User Interfaces 
+
+It allows front end UI's to be built with 
+ease and extends features beyond vanilla 
+HTML, CSS, and JS
+
+In React we have things that look like 
+HTML inside of JavaScript, that's JSX
+
+React will render components to the page, 
+that's the main idea behind it, it breaks 
+your code into components that can be dynamically 
+rendered to the page
+
+It's a different way to build web apps, and can 
+make building well functioning and visually appealing 
+apps more streamline 
+
+At it's core, React is a tool that makes creating 
+front-end apps easier 
