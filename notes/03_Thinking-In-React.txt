@@ -1,0 +1,52 @@
+=======================
+Thinking in a React way
+=======================
+
+When using React to build our UI's, we need 
+to change our thought approach
+
+It's different than the thought approach when 
+building with vanilla JavaScript
+
+When building our UI, we should always keep in 
+mind what the final build will look like 
+
+Then once we have what the final build will look 
+like as a concept, we break that final concept down 
+into components, a component hierarchy 
+
+One important thing to keep in mind when breaking 
+the final concept down into a component hierarchy, 
+when we write our code for the components, we need 
+to change our thought process for writing code 
+
+In vanilla JavaScript applications, our code is 
+imperative, meaning it goes step by step top to 
+bottom
+
+With React, the thought process should be more 
+along the lines of 'I want this app to look like 
+this in the end' and I want React to fill all of 
+this in for me 
+
+This is declarative programming
+
+An analogy for imperative vs. declarative programming 
+would be if we wanted to make a sandwich
+
+The imperative approach to building a sandwich 
+is to first get a list of ingredients, then 
+have a list of instructions on how to combine 
+said ingredients to create the final sandwich
+
+The declarative way to building a sandwich is 
+by going to a sandwich shop and saying 'I want 
+a sandwich with these ingredients or toppings'
+
+These are the two different approaches, imperative is 
+how I get to the end result sandwich, declarative is 
+saying this is the kind of sandwich I want 
+
+That's the mindset and thought approach needed 
+to write React code, the final part of this project 
+will help illustrate this concept clearly

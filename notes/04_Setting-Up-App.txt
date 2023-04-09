@@ -1,0 +1,23 @@
+==================
+Setting up the app
+==================
+
+Step 1. Inside of project folder run the following 
+command: npm create vite@latest, which will create 
+a vite app 
+
+Step 2. Fill in the project name in the command line
+prompt, type a '.' to name the project after the 
+current directory name 
+
+Step 3. Scroll down to React in the command line 
+and hit enter, then scroll down to JavaScript 
++ SWC, SWC stands for speedy web compiler, this is 
+a faster alternative to babel that can transpile 
+modern into EcmaScript 5, which can be used in most 
+browsers 
+
+Step 4. Run 'npm i' to install all necessary dependencies 
+
+Step 5. Run 'npm run dev' this will start our application 
+and give us a localhost where it's being ran
