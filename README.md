@@ -26,4 +26,4 @@ _We'll learn:_
 
 [Web Dev Simplified - Learn React With This One Project](https://www.youtube.com/watch?v=Rh3tobg7hEo&t=5s)
 
-[Web Dev Simplified - Learn React With This One Project](www.jesse-zhou.com)
+[Web Dev Simplified - Learn React With This One Project](https://www.jesse-zhou.com)
