@@ -4,6 +4,10 @@
 
 ### This will give an nice compact overview of React.js and provide a nice bedrock foundation for when I start Colt Steele's React.js course.
 
+Actually maybe I should take a different learning approach, after this quick overview of React project, maybe I should just start building stuff I want to build and use React, Colt's course is 40 hours long, and I'm sure it's excellent, but I need to start building things of my own and I have ideas I really want to build.
+
+Also need to learn three.js, some of those three.js sites are the coolest things I've ever seen, (jesse-zhou.com) is a dream build, I have to make something like that one day
+
 _We'll learn:_
 
 - What React.js is
