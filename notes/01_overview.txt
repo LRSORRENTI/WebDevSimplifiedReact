@@ -1,0 +1,21 @@
+This mini project will have the following structure
+
+Timestamps:
+
+Section 01: 00:00 - Introduction
+
+Section 02: 01:10 - What Is React
+
+Section 03: 02:45 - Thinking In React
+
+Section 04: 06:07 - Todo List Project Setup
+
+Section 05: 10:45 - JSX
+
+Section 06: 15:30 - React State
+
+Section 07: 20:15 - Todos Logic
+
+Section 08: 30:45 - Break App Into Components
+
+Section 09: 38:15 - useEffect Hook
