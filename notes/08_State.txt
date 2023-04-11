@@ -1,0 +1,104 @@
+==============
+State in REACT
+==============
+
+So to make our site dynamic, adding 
+to-do items, deleting them, we need 
+to utilize the REACT concept of STATE 
+
+So inside of our main App() function, before 
+the return keyword, we use the useState() hook
+
+This is a hook in react we need to import at the 
+top of the App.jsx file: 
+
+import { useState } from "react"
+
+by default useState takes a value, 
+in our case an empty string 
+
+useState("")
+
+because we're going to hook it up to our 
+input text field, and by default the text field 
+should be an empty string
+
+This will return to us an array, the first value 
+will be a new value, whatever is passed into the 
+text input field 
+
+The second item in the array will be a function
+called setNewItem, this is a very common naming 
+syntax you'll likely see when working on React 
+codebases 
+
+const [newItem, setNewItem] = useState("")
+
+In React, by default state is immutable, it cannot 
+change
+
+To change the value we need to utilize that 
+function setNewItem
+
+setNewItem("walk dogs")
+
+and what this does is update the [newItem] value 
+from that array to be "walk dogs"
+
+But to do this, it actually will re-render the entire 
+component
+
+But we need to update our input when it changes, so 
+inside our jsx: 
+
+  <input value={newItem} type="text" id="item" />
+
+  So now after adding that value={newItem}
+  when we change the value of 
+
+  const [newItem, setNewItem] = useState("walk dogs")
+  we see in the DOM the input field becomes, walk dogs 
+
+  Now we need to leave that blank for 
+  the user to input the to do item themselves
+  , so remove the "walk dogs" string 
+
+  And we want to update it whenever our item changes 
+in react if we want to handle other event listeners,
+in our case we need an onChange event, this event 
+will fire every time we click a key inside that 
+text field
+
+So inside of input we add this, we'll use 
+an arrow function saying each event call 
+setNewItem, with the event.target.value 
+
+What this is doing is taking the value from the 
+text field, saving it to the newItem value in that 
+array as the newItem 
+
+ <input value={newItem} onChange={event => setNewItem(event.target.value) }type="text" id="item" />
+
+ So now when we add text to the input field, it 
+ displays the text 
+
+ So what's happening? 
+
+ Well with the line:
+
+onChange={event => setNewItem(event.target.value)
+
+we're saying: whenever the input text changes, grab 
+that new value, set that to the newItem, then re-run 
+the component and now the value={newItem} so the 
+text field will be saved to that newItem
+
+Seems confusing, but remember what we return 
+from a component we're returning the exact 
+output of what something will look like, so 
+if value={mewItem} the input is always going 
+to have that value no matter what
+
+The only way to change it is with some kind 
+of event functionality like onChange 
+to change the state variable 

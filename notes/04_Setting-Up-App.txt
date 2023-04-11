@@ -20,4 +20,12 @@ browsers
 Step 4. Run 'npm i' to install all necessary dependencies 
 
 Step 5. Run 'npm run dev' this will start our application 
-and give us a localhost where it's being ran
+and give us a localhost where it's being ran, ctrl click 
+to open in the browser and we see the vite template 
+running along side the React logo
+
+After running our commands, we see we have a lot of 
+files in our directory, a vite.config.js where we 
+can alter the config for vite 
+
+package.json with scripts and dependencies
