@@ -114,3 +114,20 @@ In summary, the decision to use
 
 
 
+==================================
+What we want the site to look like
+==================================
+
+As it stands, right now, we have what 
+we want the site to look like, we don't 
+have the functionality to render items 
+to the dom onclick for the button, extracting 
+the text from the input field and adding it 
+to the page, nor do we have the delete functionality
+in place yet
+
+BUT this is good, this is a declarative approach 
+to building a website, we know what our site
+looks like, we know what the functionality should 
+be, now we take the steps to implement 
+the functionality to complete our site 
