@@ -75,3 +75,8 @@ ReactDOM.createRoot(document.getElementById('root')):
  // that we are rendering 
  // to the DOM. It is the 
  // top-level component of our React application.
+
+ Remember, with libraries like react, we dynamically 
+ render our content via a root div, the html itself 
+ is empty otherwise, our html, style, and functionality 
+ will be rendered via this root div 

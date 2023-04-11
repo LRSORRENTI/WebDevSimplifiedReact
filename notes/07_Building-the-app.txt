@@ -1,0 +1,7 @@
+================
+Building the app
+================
+
+As you see, we have some css files, 
+some asset files, we're going to delete most 
+of this
