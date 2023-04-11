@@ -19,3 +19,35 @@ Inside react 'class' is reserved, if
 we want to add a class to jsx element, 
 we instead use <form className="input-form"></form>
 We need to use className instead of class 
+
+Also important, we can only ever return one 
+thing inside of a return App() func, one way 
+around this is to wrap the entire html inside 
+of a div, which will work
+
+But a better way is to use a FRAGMENT, 
+what is a fragment? 
+
+Well a fragment is just an element that has no 
+specified tag, it looks like this: 
+
+
+export default function App(){
+  return (
+  <>
+  <form className="add-item-form">
+    <div className="row-form">
+      <label htmlFor="item">My Items</label>
+      <input type="text" id="item" />
+    </div>
+    <button className="btn">Add Item</button>
+  </form>
+  <h1 className="h1">My To-Do List</h1>
+  </>
+  )
+}
+
+So as we see, after the return keyword, we add 
+a '()' to wrap the whole thing inside, then below 
+use <>, with nothing inside, and at the bottom 
+before the ending '()' we close the fragment </>
