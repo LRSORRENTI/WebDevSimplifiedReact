@@ -1,0 +1,77 @@
+===================
+A look at the setup
+===================
+
+Now if we look at our main index.html, at 
+the bottom, below our root div, we have a script,
+and the src connects to main.jsx file
+
+And if we look at that main.jsx file we see:
+
+import React from 'react'
+
+// The above line imports the react module from 
+// the react package, this provides the core 
+// functionality for building react apps 
+
+import ReactDOM from 'react-dom/client'
+
+// The above line imports the react-dom module 
+// from the react-dom client package, this provides 
+// functionality for rendering react components 
+// to the dom
+
+
+import App from './App'
+
+// This line is importing the 
+// App module from the './App' file. 
+// Assuming that the './App' file exports a 
+// default React component,
+// this line is effectively importing that component.
+
+
+import './index.css'
+
+ // This line is importing a CSS file, 
+ // but it is not importing a module. 
+ // Instead, it is importing the file
+  // and applying its styles to the 
+  // current module (usually the entire 
+  // application).
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+// The above is how we actually render our app component 
+// to the dom itself
+
+ReactDOM.createRoot(document.getElementById('root')): 
+
+// This line is creating a new React root element
+ // by calling ReactDOM.createRoot() and passing 
+ // in the DOM element with ID "root" as an argument.
+  // This root element is where our React application
+   // will be rendered.
+
+// .render: This is the method that
+// actually renders a React element to the DOM.
+
+// <React.StrictMode>: This is a special 
+// component provided by React that helps
+ // with development mode. It activates 
+ // additional checks and warnings for
+ // potential issues in your code.
+  
+  //  Wrapping your component with 
+   // <React.StrictMode> does not affect
+    // the production build.
+
+<App />: 
+// This is the component
+ // that we are rendering 
+ // to the DOM. It is the 
+ // top-level component of our React application.
