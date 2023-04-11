@@ -10,3 +10,12 @@ imported css at the top
 Then inside our App.jsx file, we're going to 
 delete everything inside the main App func, and 
 add our own functionality
+
+=====================
+IMPORTANT DISTINCTION
+=====================
+
+Inside react 'class' is reserved, if 
+we want to add a class to jsx element, 
+we instead use <form className="input-form"></form>
+We need to use className instead of class 

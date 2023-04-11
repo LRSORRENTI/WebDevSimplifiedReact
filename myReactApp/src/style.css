@@ -11,13 +11,13 @@ body {
   margin: 0 auto;
 }
 
-.new-item-form {
+.add-item-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.form-row {
+.row-form {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
