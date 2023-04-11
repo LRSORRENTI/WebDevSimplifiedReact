@@ -62,3 +62,43 @@ inside our jsx:
   Now we need to leave that blank for 
   the user to input the to do item themselves
   , so remove the "walk dogs" string 
+
+  And we want to update it whenever our item changes 
+in react if we want to handle other event listeners,
+in our case we need an onChange event, this event 
+will fire every time we click a key inside that 
+text field
+
+So inside of input we add this, we'll use 
+an arrow function saying each event call 
+setNewItem, with the event.target.value 
+
+What this is doing is taking the value from the 
+text field, saving it to the newItem value in that 
+array as the newItem 
+
+ <input value={newItem} onChange={event => setNewItem(event.target.value) }type="text" id="item" />
+
+ So now when we add text to the input field, it 
+ displays the text 
+
+ So what's happening? 
+
+ Well with the line:
+
+onChange={event => setNewItem(event.target.value)
+
+we're saying: whenever the input text changes, grab 
+that new value, set that to the newItem, then re-run 
+the component and now the value={newItem} so the 
+text field will be saved to that newItem
+
+Seems confusing, but remember what we return 
+from a component we're returning the exact 
+output of what something will look like, so 
+if value={mewItem} the input is always going 
+to have that value no matter what
+
+The only way to change it is with some kind 
+of event functionality like onChange 
+to change the state variable 
