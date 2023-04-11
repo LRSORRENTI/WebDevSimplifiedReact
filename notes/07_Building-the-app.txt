@@ -4,4 +4,9 @@ Building the app
 
 As you see, we have some css files, 
 some asset files, we're going to delete most 
-of this
+of this, and in our main.jsx we can remove the 
+imported css at the top 
+
+Then inside our App.jsx file, we're going to 
+delete everything inside the main App func, and 
+add our own functionality
