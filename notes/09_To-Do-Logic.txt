@@ -1,0 +1,83 @@
+=========================
+To-Do List Add Item Logic 
+=========================
+
+We need to implement the logic 
+that makes it possible to dynamically 
+render to-do items with the add button 
+
+How do we do this in React? 
+
+Well we need an event listener that listens 
+for the add button on click event, in our 
+case we're going to use the handleSubmit 
+event listener, with a brand new function 
+we're going to create above the return 
+fragment for our jsx 
+
+We also need to create another piece of state, 
+to accomplish this we'll crate another des
+
+ const [newItem, setNewItem] = useState("")
+ const [todoItems, setTodoItems] = useState([])
+
+function handleSubmit(event){
+    // This line will prevent our 
+    // page from refreshing, so when 
+    // we press the add button at this point
+    // it won't do anything, it will not remove 
+    // the text
+     event.preventDefault()
+}
+
+Any time we want to re-render and update the 
+data, we need to use state to achieve this, when 
+we change our input, when we change our to-do list, 
+we need to utilize state to accomplish this 
+
+
+So now we can add, below the prevent default,
+
+
+function handleSubmit(event){
+    // This line will prevent our 
+    // page from refreshing, so when 
+    // we press the add button at this point
+    // it won't do anything, it will not remove 
+    // the text
+     event.preventDefault()
+     setTodoItems([...todoItems, {id: crypto.randomUUID,
+     title: newItem, completed: false } ])
+}
+
+
+The above IS NOT how we're supposed to do this in React
+in order to accomplish our state change we actually 
+need to pass a function into the 
+setTodoItems like this: 
+
+setTodoItems((currentTodos) => {
+    return [...currentTodos, {id: crypto.randomUUID,
+     title: newItem, completed: false } ]
+})
+
+// So now that we have to render these to-do items out, 
+// to do this we can map them
+
+  <h1 className="h1">My To-Do List</h1>
+  <ul className="list-items">
+  // below is where we use curly brackets, 
+  // what this does is it treats anything 
+  // inside as JS code, and whatever it returns 
+  // it will place below
+  {todoItems.map((todo) => {
+    return
+        <li>
+      <label>
+        <input type="checkbox" checked={todo.completed} />
+        {todo.title}
+      </label>
+      <button className="btn btn-danger">Delete Item</button>
+    </li>
+  })}
+
