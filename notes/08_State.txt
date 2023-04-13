@@ -102,3 +102,6 @@ to have that value no matter what
 The only way to change it is with some kind 
 of event functionality like onChange 
 to change the state variable 
+
+And note that when we change a state variable, it 
+always re-renders the entire component

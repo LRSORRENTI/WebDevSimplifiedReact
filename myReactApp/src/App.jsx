@@ -6,9 +6,21 @@ import { useState } from "react"
 
 export default function App(){
  const [newItem, setNewItem] = useState("")
+ const [todoItems, setTodoItems] = useState([])
+
+function handleSubmit(event){
+  event.preventDefault()
+  setTodoItems((currentTodos) => {
+    return [...currentTodos, {id: crypto.randomUUID,
+     title: newItem, completed: false } ]
+})
+}
+
+console.log(todoItems)
+
   return (
   <>
-  <form className="add-item-form">
+  <form onSubmit={handleSubmit} className="add-item-form">
     <div className="row-form">
       <label htmlFor="item">My Items</label>
 
@@ -20,13 +32,18 @@ export default function App(){
   </form>
   <h1 className="h1">My To-Do List</h1>
   <ul className="list-items">
-    <li>
+{todoItems.map((todo) => {
+    return (
+        <li>
       <label>
-        <input type="checkbox" />
-        Item 1
+        <input type="checkbox" checked={todo.completed} />
+        {todo.title}
       </label>
       <button className="btn btn-danger">Delete Item</button>
     </li>
+    )
+  })}
+
   </ul>
   </>
   )
