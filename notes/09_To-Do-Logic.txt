@@ -72,7 +72,7 @@ setTodoItems((currentTodos) => {
   // it will place below
   {todoItems.map((todo) => {
     return
-        <li>
+        <li>, 
       <label>
         <input type="checkbox" checked={todo.completed} />
         {todo.title}
@@ -81,3 +81,21 @@ setTodoItems((currentTodos) => {
     </li>
   })}
 
+But we're also getting some errors: 
+
+114:1 Warning: Each child in a 
+list should have a unique "key" prop.
+
+AND 
+
+rning: You provided a `checked` 
+prop to a form field without an 
+`onChange` handler. This will 
+render a read-only field. If the 
+field should be mutable use `defaultChecked`.
+ Otherwise, set either `onChange` or `readOnly`.
+    at input
+    at label
+    at li
+    at ul
+    at App 
